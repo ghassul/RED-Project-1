@@ -1,0 +1,38 @@
+/* Helps images/videos scale properly */
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Clearfix */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Contains content within 840px */
+.container {
+  width: 100%;
+  max-width: 840px;
+  margin: 0 auto;
+
+  @include tablet {
+    width: 420px;
+  }
+}
+
+/* Set base font/size for text */
+body {
+  font-family: $font-stack;
+  font-size: 16px;
+}
+
+h1, h2, h3, h4 {
+  font-weight: bold;
+}
+
+a {
+  color: $highlight-color;
+  text-decoration: none;
+}

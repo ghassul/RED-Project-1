@@ -1,0 +1,319 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: 'open_sans';
+  src: url("../assets/fonts/opensans-regular-webfont.eot");
+  src: url("../assets/fonts/opensans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/opensans-regular-webfont.woff2") format("woff2"), url("../assets/fonts/opensans-regular-webfont.woff") format("woff"), url("../assets/fonts/opensans-regular-webfont.ttf") format("truetype"), url("../assets/fonts/opensans-regular-webfont.svg#open_sansregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'open_sans';
+  src: url("../assets/fonts/opensans-bold-webfont.eot");
+  src: url("../assets/fonts/opensans-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/opensans-bold-webfont.woff2") format("woff2"), url("../assets/fonts/opensans-bold-webfont.woff") format("woff"), url("../assets/fonts/opensans-bold-webfont.ttf") format("truetype"), url("../assets/fonts/opensans-bold-webfont.svg#open_sansbold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: 'open_sans';
+  src: url("../assets/fonts/opensans-bolditalic-webfont.eot");
+  src: url("../assets/fonts/opensans-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/opensans-bolditalic-webfont.woff2") format("woff2"), url("../assets/fonts/opensans-bolditalic-webfont.woff") format("woff"), url("../assets/fonts/opensans-bolditalic-webfont.ttf") format("truetype"), url("../assets/fonts/opensans-bolditalic-webfont.svg#open_sansbold_italic") format("svg");
+  font-weight: bold;
+  font-style: italic; }
+@font-face {
+  font-family: 'open_sans';
+  src: url("../assets/fonts/opensans-italic-webfont.eot");
+  src: url("../assets/fonts/opensans-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/opensans-italic-webfont.woff2") format("woff2"), url("../assets/fonts/opensans-italic-webfont.woff") format("woff"), url("../assets/fonts/opensans-italic-webfont.ttf") format("truetype"), url("../assets/fonts/opensans-italic-webfont.svg#open_sansitalic") format("svg");
+  font-weight: normal;
+  font-style: italic; }
+/* Helps images/videos scale properly */
+img, video {
+  max-width: 100%;
+  height: auto; }
+
+/* Clearfix */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/* Contains content within 840px */
+.container {
+  width: 100%;
+  max-width: 840px;
+  margin: 0 auto; }
+  @media (max-width: 860px) {
+    .container {
+      width: 420px; } }
+
+/* Set base font/size for text */
+body {
+  font-family: "open_sans", sans-serif;
+  font-size: 16px; }
+
+h1, h2, h3, h4 {
+  font-weight: bold; }
+
+a {
+  color: #feaa3a;
+  text-decoration: none; }
+
+header {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 8.125rem;
+  background: url("../assets/images/birds.jpg") no-repeat center center fixed;
+  background-size: cover; }
+  header .logo {
+    display: block;
+    margin: 0 auto 1.875rem;
+    max-width: 16.19047619047619%; }
+    @media (max-width: 860px) {
+      header .logo {
+        width: 110px;
+        min-width: 110px;
+        margin-bottom: 90px; } }
+  header .title_name {
+    display: inline;
+    border-bottom: 1px solid #feaa3a;
+    font-size: 3.5rem;
+    padding-bottom: 0.3rem;
+    color: white; }
+  header .title_job {
+    font-size: 2.25rem;
+    margin-top: 1.5rem;
+    margin-bottom: 6.25rem;
+    color: white;
+    font-weight: normal; }
+  header .grey_background {
+    background-color: rgba(51, 51, 51, 0.8);
+    padding: 3.125rem; }
+    header .grey_background .headshot {
+      float: left;
+      position: relative;
+      left: 1rem;
+      top: 1.25rem; }
+      @media (max-width: 860px) {
+        header .grey_background .headshot {
+          float: none;
+          display: block;
+          margin: 0 auto;
+          width: 110px;
+          left: 0;
+          padding-bottom: 35px; } }
+    header .grey_background .intro_text {
+      text-align: left;
+      float: right;
+      width: 65%;
+      margin-top: 1.25rem; }
+      @media (max-width: 860px) {
+        header .grey_background .intro_text {
+          float: none;
+          text-align: center;
+          width: 100%; } }
+      header .grey_background .intro_text .big_hello {
+        font-size: 2.25rem;
+        margin: 0.3rem 0;
+        color: #feaa3a; }
+      header .grey_background .intro_text p {
+        margin: 1.25rem 0;
+        color: white; }
+
+.work_exp .work_exp_heading {
+  text-align: left;
+  font-size: 2rem;
+  margin-top: 3.5rem;
+  text-transform: uppercase;
+  border-bottom: 1px solid black;
+  padding-bottom: 1rem; }
+  @media (max-width: 860px) {
+    .work_exp .work_exp_heading {
+      text-align: center; } }
+.work_exp div div {
+  float: left;
+  width: 33%;
+  padding-top: 3px; }
+  @media (max-width: 860px) {
+    .work_exp div div {
+      float: none;
+      width: 100%; } }
+  .work_exp div div p {
+    padding-top: 2px;
+    padding-bottom: 1px;
+    width: 100%; }
+    @media (max-width: 860px) {
+      .work_exp div div p {
+        float: none;
+        text-align: center;
+        padding: 3px 0; } }
+.work_exp div p {
+  float: right;
+  width: 67%;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem; }
+  @media (max-width: 860px) {
+    .work_exp div p {
+      width: 100%; } }
+.work_exp .wwru {
+  border-bottom: 1px solid black;
+  padding-top: 18px;
+  padding-bottom: 1.5rem; }
+.work_exp .self_emp {
+  padding-top: 1.25rem;
+  padding-bottom: 2.5rem; }
+
+.cloudsbg {
+  background: url("../assets/images/clouds.jpg") no-repeat center center fixed;
+  background-size: cover; }
+  .cloudsbg .greybg2 {
+    background-color: rgba(51, 51, 51, 0.6); }
+    .cloudsbg .greybg2 .skills {
+      padding-top: 1rem;
+      padding-bottom: 3.75rem; }
+      @media (max-width: 860px) {
+        .cloudsbg .greybg2 .skills {
+          padding-bottom: 40px; } }
+      .cloudsbg .greybg2 .skills div {
+        display: inline-block;
+        width: 100%; }
+        .cloudsbg .greybg2 .skills div div {
+          width: 49.73772%;
+          min-width: 417px; }
+          .cloudsbg .greybg2 .skills div div p {
+            display: inline-block;
+            border-radius: 50%;
+            border: 2px solid #feaa3a;
+            text-align: center;
+            height: 6.25rem;
+            width: 6.25rem;
+            line-height: 6.25rem;
+            color: white;
+            margin: 3.8066962957382%; }
+      .cloudsbg .greybg2 .skills .skills_heading {
+        text-align: center;
+        font-size: 1.875rem;
+        text-transform: uppercase;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid white;
+        margin: 1.875rem 0;
+        color: white;
+        font-weight: normal; }
+
+.education {
+  padding-bottom: 3.125rem; }
+  .education .edu_heading {
+    font-size: 2rem;
+    margin-top: 3.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+    margin-bottom: 1rem;
+    padding-bottom: 1.5rem; }
+    @media (max-width: 860px) {
+      .education .edu_heading {
+        text-align: center; } }
+  .education p {
+    padding: 0.25rem 0; }
+  @media (max-width: 860px) {
+    .education p:nth-child(2),
+    .education p:nth-child(3) {
+      text-align: center; } }
+
+footer {
+  background-color: black;
+  color: white; }
+  @media (max-width: 860px) {
+    footer div div p {
+      text-align: center;
+      float: none;
+      width: 100%; } }
+  footer div p {
+    text-transform: uppercase;
+    padding-bottom: 0.75rem; }
+  footer .getconnected {
+    font-size: 2rem;
+    padding-top: 3.5rem;
+    text-transform: uppercase;
+    border-bottom: 1px solid white;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem; }
+    @media (max-width: 860px) {
+      footer .getconnected {
+        text-align: center; } }
+  footer .contactinfo {
+    float: left; }
+    @media (max-width: 860px) {
+      footer .contactinfo {
+        width: 100%; } }
+  footer .footer_icons {
+    float: right;
+    color: #feaa3a;
+    width: 32.02%; }
+    @media (max-width: 860px) {
+      footer .footer_icons {
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+        padding: 25px 0; } }
+    footer .footer_icons i {
+      padding: 0 5%;
+      float: left; }
+      @media (max-width: 860px) {
+        footer .footer_icons i {
+          float: none;
+          padding: 0 2%; } }
+  footer .copyright {
+    font-size: 0.625rem;
+    padding-top: 2.25rem;
+    clear: both; }
+    @media (max-width: 860px) {
+      footer .copyright {
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 40px; } }
+
+/*# sourceMappingURL=styles.css.map */

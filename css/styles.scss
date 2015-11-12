@@ -1,0 +1,315 @@
+@import "reset";
+@import "variables";
+@import "fonts";
+@import "mixins";
+@import "global";
+
+
+header {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 8.125rem;
+  background: url('../assets/images/birds.jpg') no-repeat center center fixed;
+  background-size: cover;
+
+  .logo {
+    display: block;
+    margin: 0 auto 1.875rem;
+    max-width: 16.19047619047619%;
+
+    @include tablet {
+      width: 110px;
+      min-width: 110px;
+      margin-bottom: 90px;
+    }
+  }
+
+  .title_name {
+    display: inline;
+    border-bottom: 1px solid #feaa3a;
+    font-size: 3.5rem;
+    padding-bottom: 0.3rem;
+    color: white;
+  }
+
+  .title_job {
+    font-size: 2.25rem;
+    margin-top: 1.5rem;
+    margin-bottom: 6.25rem;
+    color: white;
+    font-weight: normal;
+  }
+
+  .grey_background {
+    background-color: rgba(51, 51, 51, .8);
+    padding: 3.125rem;
+
+    .headshot {
+      float: left;
+      position: relative;
+      left: 1rem;
+      top: 1.25rem;
+
+      @include tablet {
+        float: none;
+        display: block;
+        margin: 0 auto;
+        width: 110px;
+        left: 0;
+        padding-bottom: 35px;
+      }
+    }
+
+    .intro_text {
+      text-align: left;
+      float: right;
+      width: 65%;
+      margin-top: 1.25rem;
+
+      @include tablet {
+        float: none;
+        text-align: center;
+        width: 100%;
+      }
+
+      .big_hello {
+        font-size: 2.25rem;
+        margin: 0.3rem 0;
+        color: #feaa3a;
+      }
+
+      p {
+        margin: 1.25rem 0;
+        color: white;
+      }
+    }
+  }
+}
+
+.work_exp {
+
+  .work_exp_heading {
+    text-align: left;
+    font-size: 2rem;
+    margin-top: 3.5rem;
+    text-transform: uppercase;
+    border-bottom: 1px solid black;
+    padding-bottom: 1rem;
+
+    @include tablet {
+      text-align: center;
+    }
+  }
+
+  div {
+
+    div {
+      float: left;
+      width: 33%;
+      padding-top: 3px;
+
+      @include tablet {
+        float: none;
+        width: 100%;
+      }
+
+      p {
+        padding-top: 2px;
+        padding-bottom: 1px;
+        width: 100%;
+
+        @include tablet {
+          float: none;
+          text-align: center;
+          padding: 3px 0;
+        }
+      }
+    }
+
+    p {
+      float: right;
+      width: 67%;
+      padding-top: 0.3rem;
+      padding-bottom: 0.3rem;
+
+      @include tablet {
+        width: 100%;
+      }
+    }
+  }
+
+  .wwru {
+    border-bottom: 1px solid black;
+    padding-top: 18px;
+    padding-bottom: 1.5rem;
+  }
+
+  .self_emp {
+    padding-top: 1.25rem;
+    padding-bottom: 2.5rem;
+  }
+}
+
+.cloudsbg {
+  background: url("../assets/images/clouds.jpg") no-repeat center center fixed;
+  background-size: cover;
+
+  .greybg2 {
+    background-color: rgba(51, 51, 51, .6);
+
+    .skills {
+      padding-top: 1rem;
+      padding-bottom: 3.75rem;
+
+      @include tablet {
+        padding-bottom: 40px;
+      }
+
+      div {
+        display: inline-block;
+        width: 100%;
+
+        div {
+          width: 49.73772%;
+          min-width: 417px;
+
+          p {
+            display: inline-block;
+            border-radius: 50%;
+            border: 2px solid #feaa3a;
+            text-align: center;
+            height: 6.25rem;
+            width: 6.25rem;
+            line-height: 6.25rem;
+            color: white;
+            margin: 3.8066962957382%;
+          }
+        }
+      }
+
+      .skills_heading {
+        text-align: center;
+        font-size: 1.875rem;
+        text-transform: uppercase;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid white;
+        margin: 1.875rem 0;
+        color: white;
+        font-weight: normal;
+      }
+    }
+  }
+}
+
+.education {
+  padding-bottom: 3.125rem;
+
+
+  .edu_heading {
+    font-size: 2rem;
+    margin-top: 3.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 1px solid black ;
+    margin-bottom: 1rem;
+    padding-bottom: 1.5rem;
+
+    @include tablet {
+      text-align: center;
+    }
+  }
+
+  p {
+    padding: 0.25rem 0;
+  }
+
+  p:nth-child(2),
+  p:nth-child(3) {
+
+    @include tablet {
+      text-align: center
+    }
+  }
+}
+
+footer {
+  background-color: black;
+  color: white;
+
+  div {
+
+    div {
+
+      p {
+
+        @include tablet {
+          text-align: center;
+          float: none;
+          width: 100%;
+        }
+      }
+    }
+
+    p {
+      text-transform: uppercase;
+      padding-bottom: 0.75rem;
+    }
+  }
+
+  .getconnected {
+    font-size: 2rem;
+    padding-top: 3.5rem;
+    text-transform: uppercase;
+    border-bottom: 1px solid white;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+
+    @include tablet {
+      text-align: center;
+    }
+  }
+
+  .contactinfo {
+    float: left;
+
+    @include tablet {
+      width: 100%;
+    }
+  }
+
+  .footer_icons {
+    float: right;
+    color: $highlight-color;
+    width: 32.02%;
+
+    @include tablet {
+      text-align: center;
+      margin: 0 auto;
+      width: 100%;
+      padding: 25px 0;
+    }
+
+    i {
+      padding: 0 5%;
+      float: left;
+
+      @include tablet {
+        float: none;
+        padding: 0 2%;
+      }
+    }
+  }
+
+  .copyright {
+    font-size: 0.625rem;
+    padding-top: 2.25rem;
+    clear: both;
+
+    @include tablet {
+      text-align: center;
+      padding-top: 10px;
+      padding-bottom: 40px;
+    }
+  }
+}
