@@ -26,13 +26,32 @@ img, video {
 body {
   font-family: $font-stack;
   font-size: 16px;
+  line-height: 1.5;
 }
 
 h1, h2, h3, h4 {
   font-weight: bold;
 }
 
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  padding-bottom: .5rem;
+}
+
+h3 {
+  color: #feaa3a;
+  font-size: 1.2rem;
+  @include tablet {
+    text-align: center;
+  }
+}
+
 a {
   color: $highlight-color;
   text-decoration: none;
+}
+
+.emphasis {
+  font-style: italic;
 }

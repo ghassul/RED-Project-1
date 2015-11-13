@@ -10,46 +10,40 @@ header {
   margin: 0 auto;
   text-align: center;
   padding-top: 8.125rem;
-  background: url('../assets/images/birds.jpg') no-repeat center center fixed;
-  background-size: cover;
+  background: #333 url('../assets/images/birds.jpg') no-repeat center center fixed;
 
   .logo {
     display: block;
-    margin: 0 auto 1.875rem;
+    margin: 0 auto 1.5rem;
     max-width: 16.19047619047619%;
 
     @include tablet {
       width: 110px;
       min-width: 110px;
-      margin-bottom: 90px;
     }
   }
 
   .title_name {
     display: inline;
     border-bottom: 1px solid #feaa3a;
-    font-size: 3.5rem;
-    padding-bottom: 0.3rem;
+    font-size: 2.7rem;
     color: white;
   }
 
   .title_job {
-    font-size: 2.25rem;
-    margin-top: 1.5rem;
+    font-size: 1.8rem;
     margin-bottom: 6.25rem;
     color: white;
     font-weight: normal;
   }
 
   .grey_background {
-    background-color: rgba(51, 51, 51, .8);
-    padding: 3.125rem;
+    background-color: rgba(0,0,0,0.5);
+    padding: 3rem 0;
 
     .headshot {
       float: left;
-      position: relative;
-      left: 1rem;
-      top: 1.25rem;
+      width: 30%;
 
       @include tablet {
         float: none;
@@ -65,7 +59,7 @@ header {
       text-align: left;
       float: right;
       width: 65%;
-      margin-top: 1.25rem;
+
 
       @include tablet {
         float: none;
@@ -74,13 +68,12 @@ header {
       }
 
       .big_hello {
-        font-size: 2.25rem;
-        margin: 0.3rem 0;
+        margin-bottom: 1rem;
         color: #feaa3a;
       }
 
       p {
-        margin: 1.25rem 0;
+        margin-bottom: 1rem;
         color: white;
       }
     }
@@ -95,7 +88,6 @@ header {
     margin-top: 3.5rem;
     text-transform: uppercase;
     border-bottom: 1px solid black;
-    padding-bottom: 1rem;
 
     @include tablet {
       text-align: center;
@@ -106,8 +98,9 @@ header {
 
     div {
       float: left;
-      width: 33%;
+      width: 30%;
       padding-top: 3px;
+      margin-right: 5%;
 
       @include tablet {
         float: none;
@@ -129,7 +122,7 @@ header {
 
     p {
       float: right;
-      width: 67%;
+      width: 65%;
       padding-top: 0.3rem;
       padding-bottom: 0.3rem;
 
@@ -152,14 +145,12 @@ header {
 }
 
 .cloudsbg {
-  background: url("../assets/images/clouds.jpg") no-repeat center center fixed;
-  background-size: cover;
+  background: url("../assets/images/clouds.jpg") no-repeat center center fixed #333;
 
   .greybg2 {
-    background-color: rgba(51, 51, 51, .6);
+    background-color: rgba(0,0,0,0.5);
 
     .skills {
-      padding-top: 1rem;
       padding-bottom: 3.75rem;
 
       @include tablet {
@@ -177,13 +168,13 @@ header {
           p {
             display: inline-block;
             border-radius: 50%;
-            border: 2px solid #feaa3a;
+            border: 4px solid #feaa3a;
             text-align: center;
             height: 6.25rem;
             width: 6.25rem;
             line-height: 6.25rem;
             color: white;
-            margin: 3.8066962957382%;
+            margin: 3.38%;
           }
         }
       }
@@ -192,7 +183,7 @@ header {
         text-align: center;
         font-size: 1.875rem;
         text-transform: uppercase;
-        padding-bottom: 1rem;
+        padding-bottom: .5rem;
         border-bottom: 1px solid white;
         margin: 1.875rem 0;
         color: white;
@@ -212,8 +203,6 @@ header {
     text-transform: uppercase;
     font-weight: bold;
     border-bottom: 1px solid black ;
-    margin-bottom: 1rem;
-    padding-bottom: 1.5rem;
 
     @include tablet {
       text-align: center;
@@ -253,7 +242,7 @@ footer {
 
     p {
       text-transform: uppercase;
-      padding-bottom: 0.75rem;
+      margin-bottom: .25rem;
     }
   }
 
@@ -262,8 +251,7 @@ footer {
     padding-top: 3.5rem;
     text-transform: uppercase;
     border-bottom: 1px solid white;
-    padding-bottom: 1.5rem;
-    margin-bottom: 1.5rem;
+    padding-bottom: .5rem;
 
     @include tablet {
       text-align: center;
@@ -302,7 +290,7 @@ footer {
   }
 
   .copyright {
-    font-size: 0.625rem;
+    font-size: .75rem;
     padding-top: 2.25rem;
     clear: both;
 
