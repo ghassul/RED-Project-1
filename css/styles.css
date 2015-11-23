@@ -144,32 +144,32 @@ header {
   header .grey_background {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 3rem 0; }
-    header .grey_background .headshot {
-      float: left;
-      width: 30%; }
-      @media (max-width: 860px) {
-        header .grey_background .headshot {
-          float: none;
-          display: block;
-          margin: 0 auto;
-          width: 110px;
-          left: 0;
-          padding-bottom: 35px; } }
-    header .grey_background .intro_text {
-      text-align: left;
-      float: right;
-      width: 65%; }
-      @media (max-width: 860px) {
-        header .grey_background .intro_text {
-          float: none;
-          text-align: center;
-          width: 100%; } }
-      header .grey_background .intro_text .big_hello {
-        margin-bottom: 1rem;
-        color: #feaa3a; }
-      header .grey_background .intro_text p {
-        margin-bottom: 1rem;
-        color: white; }
+  header .headshot {
+    float: left;
+    width: 30%; }
+    @media (max-width: 860px) {
+      header .headshot {
+        float: none;
+        display: block;
+        margin: 0 auto;
+        width: 110px;
+        left: 0;
+        padding-bottom: 35px; } }
+  header .intro_text {
+    text-align: left;
+    float: right;
+    width: 65%; }
+    @media (max-width: 860px) {
+      header .intro_text {
+        float: none;
+        text-align: center;
+        width: 100%; } }
+    header .intro_text p {
+      margin-bottom: 1rem;
+      color: white; }
+  header .big_hello {
+    margin-bottom: 1rem;
+    color: #feaa3a; }
 
 .work_exp .work_exp_heading {
   text-align: left;
@@ -206,65 +206,70 @@ header {
   @media (max-width: 860px) {
     .work_exp div p {
       width: 100%; } }
-.work_exp .wwru {
+
+.wwru {
   border-bottom: 1px solid black;
   padding-top: 18px;
   padding-bottom: 1.5rem; }
-.work_exp .self_emp {
+
+.self_emp {
   padding-top: 1.25rem;
   padding-bottom: 2.5rem; }
 
 .cloudsbg {
   background: url("../assets/images/clouds.jpg") no-repeat center center fixed #333; }
-  .cloudsbg .greybg2 {
-    background-color: rgba(0, 0, 0, 0.5); }
-    .cloudsbg .greybg2 .skills {
-      padding-bottom: 3.75rem; }
-      @media (max-width: 860px) {
-        .cloudsbg .greybg2 .skills {
-          padding-bottom: 40px; } }
-      .cloudsbg .greybg2 .skills div {
+
+.greybg2 {
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.skills {
+  padding-bottom: 3.75rem; }
+  @media (max-width: 860px) {
+    .skills {
+      padding-bottom: 40px; } }
+  .skills div {
+    display: inline-block;
+    width: 100%; }
+    .skills div div {
+      width: 49.73772%;
+      min-width: 417px; }
+      .skills div div p {
         display: inline-block;
-        width: 100%; }
-        .cloudsbg .greybg2 .skills div div {
-          width: 49.73772%;
-          min-width: 417px; }
-          .cloudsbg .greybg2 .skills div div p {
-            display: inline-block;
-            border-radius: 50%;
-            border: 4px solid #feaa3a;
-            text-align: center;
-            height: 6.25rem;
-            width: 6.25rem;
-            line-height: 6.25rem;
-            color: white;
-            margin: 3.38%; }
-      .cloudsbg .greybg2 .skills .skills_heading {
+        border-radius: 50%;
+        border: 4px solid #feaa3a;
         text-align: center;
-        font-size: 1.875rem;
-        text-transform: uppercase;
-        padding-bottom: .5rem;
-        border-bottom: 1px solid white;
-        margin: 1.875rem 0;
+        height: 6.25rem;
+        width: 6.25rem;
+        line-height: 6.25rem;
         color: white;
-        font-weight: normal; }
+        margin: 3.38%; }
+  .skills .skills_heading {
+    text-align: center;
+    font-size: 1.875rem;
+    text-transform: uppercase;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid white;
+    margin: 1.875rem 0;
+    color: white;
+    font-weight: normal; }
 
 .education {
   padding-bottom: 3.125rem; }
-  .education .edu_heading {
-    font-size: 2rem;
-    margin-top: 3.5rem;
-    text-transform: uppercase;
-    font-weight: bold;
-    border-bottom: 1px solid black; }
-    @media (max-width: 860px) {
-      .education .edu_heading {
-        text-align: center; } }
   .education p {
     padding: 0.25rem 0; }
   @media (max-width: 860px) {
     .education p:nth-child(2),
     .education p:nth-child(3) {
+      text-align: center; } }
+
+.edu_heading {
+  font-size: 2rem;
+  margin-top: 3.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-bottom: 1px solid black; }
+  @media (max-width: 860px) {
+    .edu_heading {
       text-align: center; } }
 
 footer {
